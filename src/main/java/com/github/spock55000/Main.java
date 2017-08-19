@@ -6,6 +6,8 @@ package com.github.spock55000;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hallo Welt");
+        MyStuff stuff = new MyStuff();
+        stuff.doIt();
     }
 
 }
