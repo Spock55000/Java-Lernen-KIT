@@ -36,7 +36,7 @@ public class Aufgabe_2 {
 
         //Teil E - Runden und Ausgabe
         System.out.println("Würfelgewicht = " +gewicht + " Kg");
-        System.out.println("Gewichtskraft F: "+gewichtskraft+" N");
+        System.out.printf("Gewichtskraft F: "+gewichtskraft+" N");
 
     }
 
