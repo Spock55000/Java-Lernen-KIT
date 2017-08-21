@@ -7,7 +7,8 @@ public class Launcher {
     public static void main(String[] args) {
         //Aufgabe_1 aufgabe = new Aufgabe_1();
         //aufgabe.run();
-        Aufgabe_2 aufgabe2 = new Aufgabe_2();
-        aufgabe2.run();
-    }
+        //Aufgabe_2 aufgabe2 = new Aufgabe_2();
+        //aufgabe2.run();
+        Test_1_Strings Test1 = new Test_1_Strings();
+        Test1.run();
 }
