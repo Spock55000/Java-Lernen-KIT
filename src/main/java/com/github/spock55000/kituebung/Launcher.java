@@ -20,6 +20,8 @@ public class Launcher {
         //AufgabeE03.run();
         //Aufgabe_E04 AufgabeE04 = new Aufgabe_E04();
         //AufgabeE04.run();
-        Aufgabe_E05 AufgabeE05 = new Aufgabe_E05();
-        AufgabeE05.run();
+        //Aufgabe_E05 AufgabeE05 = new Aufgabe_E05();
+        //AufgabeE05.run();
+        Aufgabe_E06 AufgabeE06 = new Aufgabe_E06();
+        AufgabeE06.run();
 }}
