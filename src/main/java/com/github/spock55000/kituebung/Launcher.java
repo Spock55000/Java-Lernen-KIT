@@ -1,8 +1,6 @@
 package com.github.spock55000.kituebung;
 
-import com.github.spock55000.kituebung.Euler_Aufgaben.Aufgabe_E01;
-import com.github.spock55000.kituebung.Euler_Aufgaben.Aufgabe_E02;
-import com.github.spock55000.kituebung.Euler_Aufgaben.Aufgabe_E03;
+import com.github.spock55000.kituebung.Euler_Aufgaben.*;
 import com.github.spock55000.kituebung.blatt_01.Aufgabe_1;
 import com.github.spock55000.kituebung.blatt_01.Aufgabe_2;
 
@@ -18,6 +16,10 @@ public class Launcher {
         //AufgabeE01.run();
         //Aufgabe_E02 AufgabeE02 = new Aufgabe_E02();
         //AufgabeE02.run();
-        Aufgabe_E03 AufgabeE03 = new Aufgabe_E03();
-        AufgabeE03.run();
+        //Aufgabe_E03 AufgabeE03 = new Aufgabe_E03();
+        //AufgabeE03.run();
+        //Aufgabe_E04 AufgabeE04 = new Aufgabe_E04();
+        //AufgabeE04.run();
+        Aufgabe_E05 AufgabeE05 = new Aufgabe_E05();
+        AufgabeE05.run();
 }}
