@@ -19,7 +19,9 @@ public class Aufgabe_E05 {
             summe+=d;
 
 
+
         }
+        System.out.println(summe);
         int diff = qs - summe;
         System.out.println("Die Differenz von der Summe der Quadrate " + qs + " und des Quadrats der Summe " +summe + " beträgt " +diff+ ".");
 
