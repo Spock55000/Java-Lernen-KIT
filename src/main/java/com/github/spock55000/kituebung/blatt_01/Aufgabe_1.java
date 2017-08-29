@@ -21,7 +21,8 @@ public class Aufgabe_1 {
         int maxOf = (x > y) ? x : y;
         System.out.println(maxOf);
         if (x > y) {
-            System.out.println("x ist größer als y und hat den Wert: " + x);
+            System.out.println("x ist größer als " + "\n"+
+                    "y und hat den Wert: " + x);
         } else {
             System.out.println("y ist größer als x und hat den Wert: " + y);
         }
