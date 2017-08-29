@@ -1,8 +1,10 @@
-package com.github.spock55000.kituebung.Folien;
+package com.github.spock55000.Folien;
+
+import com.github.spock55000.kituebung.LineReader;
 
 public class Binaere_Suche {
     public int[] suchFeld = {1,2,3,4,6,7,8,9,10,35,62}; //Feld geordnet!
-    public static int findeIndexBinaerRekursiv(int indexAnfang, int indexEnde, int suchNummer) {
+    public int findeIndexBinaerRekursiv(int indexAnfang, int indexEnde, int suchNummer) {
         if (indexAnfang > indexEnde) { return -1; }
         int indexMitte = indexAnfang + ((indexEnde - indexAnfang) / 2);
         if (suchNummer > suchFeld[indexMitte]) {
@@ -14,4 +16,5 @@ public class Binaere_Suche {
 
         }
     }
-}
+
+
