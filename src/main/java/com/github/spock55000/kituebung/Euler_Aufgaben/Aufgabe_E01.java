@@ -1,4 +1,4 @@
-package com.github.spock55000.Euler_Aufgaben;
+package com.github.spock55000.kituebung.Euler_Aufgaben;
 
 import com.github.spock55000.kituebung.LineReader;
 
