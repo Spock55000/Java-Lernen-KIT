@@ -4,17 +4,19 @@ public class KangerooTest {
     public static void main(String[] args){
         Kangeroo elsa;
         elsa = new Kangeroo();
-        for (int i = 0; i < 3; i++){
-            elsa.trainieren();
-        }
+        Bootcamp b = new Bootcamp();
+        int anzahl = 10;
+        b.training(elsa, anzahl);
+        System.out.println("Trainingsanzahl = " + anzahl);
+        System.out.println("Schlagkraft = " + elsa.schlagkraft);
         elsa.springen();
         elsa.boxen();
-        Kangeroo gerd;
+        /*Kangeroo gerd;
         gerd = new Kangeroo();
-        for (int i = 0; i < 3; i++){
+        for (int i = 0; i < 2; i++){
             gerd.trainieren();
         }
         gerd.springen();
-        gerd.boxen();
+        gerd.boxen();*/
     }
 }
