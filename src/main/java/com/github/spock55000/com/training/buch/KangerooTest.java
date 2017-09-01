@@ -8,16 +8,16 @@ public class KangerooTest {
         int anzahl = 10;
         b.training(elsa, anzahl);
         System.out.println("Trainingsanzahl = " + anzahl);
-        System.out.println("Schlagkraft = " + elsa.schlagkraft);
+        //System.out.println("Schlagkraft = " + elsa.schlagkraft);
         elsa.springen();
         elsa.boxen();
         Kangeroo gerd;
-        gerd = new Kangeroo();
+        /*gerd = new Kangeroo();
         for (int i = 0; i < 2; i++){
             gerd.trainieren();
         }
         gerd.springen();
-        gerd.boxen();
+        gerd.boxen();*/
         System.out.println("Es gibt insgesamt " + Kangeroo.counter + " Kängurus!");
     }
 

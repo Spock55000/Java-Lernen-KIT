@@ -1,13 +1,18 @@
 package com.github.spock55000.com.training.buch;
 
 public class Kangeroo {
-    double schlagkraft;
+    private double schlagkraft;
     double sprungweite;
 
     static int counter;
 
     Kangeroo() {
         counter++;
+        this.schlagkraft = 0.5;
+    }
+    Kangeroo(double schlagkraft){
+        this();
+        this.schlagkraft += schlagkraft;
     }
 
     void trainieren(){
@@ -31,6 +36,9 @@ public class Kangeroo {
             }
         }
     double springen(){
+        if (sprungweite == 0.0){
+            new Bootcamp().training(this, 1);
+        }
         double sprung = 0;
         do {
             sprung = (int) (Math.random() * 10);
