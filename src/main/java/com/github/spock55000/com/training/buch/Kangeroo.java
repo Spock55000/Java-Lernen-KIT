@@ -1,12 +1,13 @@
 package com.github.spock55000.com.training.buch;
 
-public class Kangeroo {
-    private double schlagkraft;
+public class Kangeroo extends Mammal{
+    protected double schlagkraft;
     double sprungweite;
 
     static int counter;
 
     Kangeroo() {
+        bezeichnung = "Makropodidae";
         counter++;
         this.schlagkraft = 0.5;
     }
@@ -14,24 +15,27 @@ public class Kangeroo {
         this();
         this.schlagkraft += schlagkraft;
     }
+    public double getSprungweite(){
+        return sprungweite;
+    }
 
     void trainieren(){
-        System.out.println("Das Känguru trainiert!");
+        System.out.println(bezeichnung + ": Das Känguru trainiert!");
         double r1 = Math.random();
         schlagkraft += r1;
-        System.out.println("Das Känguru hat nun eine Schlagkraft von " + schlagkraft);
+        System.out.println(bezeichnung + ": Das Känguru hat nun eine Schlagkraft von " + schlagkraft);
         double r2 = Math.random();
         sprungweite += r2;
-        System.out.println("Es springt nun " + sprungweite + " Meter weit");
+        System.out.println(bezeichnung + ": Es springt nun " + sprungweite + " Meter weit");
     }
 
     boolean boxen(){
         int r = (int)(Math.random() * 10);
         if (r <5) {
-            System.out.println("Das Känguru haut daneben!");
+            System.out.println(bezeichnung + ": Das Känguru haut daneben!");
             return false;
         } else {
-                System.out.println("Das Känguru trifft!");
+                System.out.println(bezeichnung + ": Das Känguru trifft!");
                 return true;
             }
         }
@@ -43,7 +47,7 @@ public class Kangeroo {
         do {
             sprung = (int) (Math.random() * 10);
         } while (sprung > sprungweite);
-        System.out.println("Das Känguru springt " + sprung + " Meter von maximal " + sprungweite);
+        System.out.println(bezeichnung + ": Das Känguru springt " + sprung + " Meter von maximal " + sprungweite);
         return sprung;
     }
 }

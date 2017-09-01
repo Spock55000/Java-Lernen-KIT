@@ -8,4 +8,12 @@ public class Bootcamp {
         //anzahl = anzahl *2;
         //k.schlagkraft += 5.0;
     }
+    public Kangeroo bestellen(){
+        Kangeroo k = new Kangeroo();
+        for (int i = 0; i < 3; i++){
+            k.trainieren();
+        }
+        return k;
+
+    }
 }
