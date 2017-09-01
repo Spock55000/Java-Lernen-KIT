@@ -11,12 +11,14 @@ public class KangerooTest {
         System.out.println("Schlagkraft = " + elsa.schlagkraft);
         elsa.springen();
         elsa.boxen();
-        /*Kangeroo gerd;
+        Kangeroo gerd;
         gerd = new Kangeroo();
         for (int i = 0; i < 2; i++){
             gerd.trainieren();
         }
         gerd.springen();
-        gerd.boxen();*/
+        gerd.boxen();
+        System.out.println("Es gibt insgesamt " + Kangeroo.counter + " Kängurus!");
     }
+
 }

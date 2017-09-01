@@ -4,6 +4,12 @@ public class Kangeroo {
     double schlagkraft;
     double sprungweite;
 
+    static int counter;
+
+    Kangeroo() {
+        counter++;
+    }
+
     void trainieren(){
         System.out.println("Das Känguru trainiert!");
         double r1 = Math.random();
