@@ -24,10 +24,6 @@ public class Kangeroo {
                 return true;
             }
         }
-
-
-
-
     double springen(){
         double sprung = 0;
         do {

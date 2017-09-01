@@ -5,7 +5,7 @@ public class Bootcamp {
         for (int i = 0; i < anzahl; i++){
             k.trainieren();
         }
-        anzahl = anzahl *2;
-        k.schlagkraft += 5.0;
+        //anzahl = anzahl *2;
+        //k.schlagkraft += 5.0;
     }
 }
