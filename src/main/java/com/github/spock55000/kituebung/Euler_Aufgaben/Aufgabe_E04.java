@@ -6,32 +6,28 @@ public class Aufgabe_E04 {
     private LineReader reader = new LineReader();
     public void run(){
         int i = 100;
-        while (i <= 999){
-            for (int j = 999; i<j; i++){
-                int q = i*j;
-                System.out.println(q);
+        int max = 999*999;
+        for (int q = 0; q <= max;i++){
+            for (int j = 999; q <= max; j--){
+                q = i*j;
+                if (max < q && Palindrom(q)){
+                    max = q;
+                    String s = Integer.toString(q);
+                    int index = s.length();
+                    int [] var = new int [index];
+                    for (int z = 0; z <= index; z++){
+                        if (var[z] != var[s.length()-1]){
+                            return false;
+                        }
+                        return true;
 
+                    }
+
+
+
+                }
             }
-
-
-
         }
-        /*
-        for (i= 100; i<=999; i++){
-            for (j=100; i<1000; j++){
-                int q = i*j;
-                System.out.println(q);
-            }
-
-
-        }
-        for (i = 100, j = 999; i<j; i++, j--){
-            int p = i*j;
-            System.out.println(p);
-
-        }*/
-
+        System.out.println(max);
     }
-
-
 }
