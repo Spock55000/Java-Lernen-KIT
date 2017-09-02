@@ -4,30 +4,28 @@ import com.github.spock55000.kituebung.LineReader;
 
 public class Aufgabe_E04 {
     private LineReader reader = new LineReader();
-    public void run(){
-        int i = 100;
-        int max = 999*999;
-        for (int q = 0; q <= max;i++){
-            for (int j = 999; q <= max; j--){
-                q = i*j;
-                if (max < q && Palindrom(q)){
+
+    public void run() {
+        int max = 0;
+        for (int i = 100; i <= 999; i++) {
+            for (int j = i; j <= 999; j++) {
+                int q = i * j;
+                if (q > max && isPalindrome(q)) {
                     max = q;
-                    String s = Integer.toString(q);
-                    int index = s.length();
-                    int [] var = new int [index];
-                    for (int z = 0; z <= index; z++){
-                        if (var[z] != var[s.length()-1]){
-                            return false;
-                        }
-                        return true;
-
-                    }
-
-
-
                 }
             }
         }
         System.out.println(max);
+    }
+
+    private boolean isPalindrome(int candidate) {
+        String s = Integer.toString(candidate);
+
+        for (int i = 0; i < s.length() / 2; ++i) {
+            if (s.charAt(i) != s.charAt(s.length() - (i + 1))) {
+                return false;
+            }
+        }
+        return true;
     }
 }
