@@ -1,9 +1,6 @@
 package com.github.spock55000.kituebung.Euler_Aufgaben;
 
-import com.github.spock55000.kituebung.LineReader;
-
 public class Aufgabe_E04 {
-    private LineReader reader = new LineReader();
 
     public void run() {
         int max = 0;
@@ -22,7 +19,7 @@ public class Aufgabe_E04 {
         String s = Integer.toString(candidate);
 
         for (int i = 0; i < s.length() / 2; ++i) {
-            if (s.charAt(i) != s.charAt(s.length() - (i + 1))) {
+            if (s.charAt(i) != s.charAt((s.length() - 1) - i)) {
                 return false;
             }
         }

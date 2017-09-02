@@ -1,9 +1,9 @@
 package com.github.spock55000.kituebung.Euler_Aufgaben;
 
-import com.github.spock55000.kituebung.LineReader;
+
 
 public class Aufgabe_E06 {
-    private LineReader reader = new LineReader();
+
     public void run(){
         int n;
         int d;
