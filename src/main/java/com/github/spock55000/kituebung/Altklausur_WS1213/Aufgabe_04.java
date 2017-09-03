@@ -8,7 +8,7 @@ public class Aufgabe_04 {
         boolean d = true;
         System.out.println(a || b);
         System.out.println(!c && !d);
-        if (a == b) {                  // unnötig, da a ungleich b ist und damit der Block ignoriert wird
+        if (a == b) {
             c = true;
             a = b;
             System.out.println("Not true: " + !true);
@@ -29,7 +29,6 @@ public class Aufgabe_04 {
         }
         System.out.println((!a && !b || (!a && b) || (a && b)));
 
-
         if(a||b||c||d){ // immer wahr
             a = !b; //true
             b = !c; //true
@@ -39,8 +38,5 @@ public class Aufgabe_04 {
         }
         System.out.println((a && !c) || (!a && d));
         System.out.println((a||b) && (!c || !d));
-
-
     }
-
 }
