@@ -1,6 +1,6 @@
 package com.github.spock55000.kituebung.Altklausur_WS1213;
 
-public class Aufgabe_05 {
+public class Stack {
     public ListElementDL begin;
     public ListElementDL end;
     public int size;
@@ -22,25 +22,24 @@ public class Aufgabe_05 {
 
 
     public boolean isEmpty (){
-        return this.isEmpty();
+        return size == 0;
+    }
 
+    public Object top() { //Inhalt des Oberste Elements bzw das Oberste Element
+        return null;
 
 
     }
 
-    top() {
-
-
-    }
-
-    public void push() {
+    public void push(Object kagge) { //Legt eine Element oben auf den Stapel drauf
 
     }
 
-    pop() {
+    public Object pop() { //gibt das oberste Element zurück und löscht es vom Stapel
+        return null;
 
 
-    }*/
+    }
 }
 
 
