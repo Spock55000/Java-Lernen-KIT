@@ -1,6 +1,6 @@
 package com.github.spock55000.kituebung.Altklausur_WS1213;
 
-public class Aufgabe_05 {/*
+public class Aufgabe_05 {
     public ListElementDL begin;
     public ListElementDL end;
     public int size;
@@ -21,7 +21,9 @@ public class Aufgabe_05 {/*
     }
 
 
-    isEmpty() {
+    public boolean isEmpty (){
+        return this.isEmpty();
+
 
 
     }
@@ -31,8 +33,7 @@ public class Aufgabe_05 {/*
 
     }
 
-    push() {
-
+    public void push() {
 
     }
 
