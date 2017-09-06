@@ -11,16 +11,12 @@ public class Stack {/*
         begin.setNext(end);
         end.setPrev(begin);
     }
-
     public int size() {
         return this.size;
     }
-
     public String toString() {
         return "(" + begin.getNext().toString() + ")";
     }
-
-
     public boolean isEmpty (){
         return this.size() == 0;
     }
