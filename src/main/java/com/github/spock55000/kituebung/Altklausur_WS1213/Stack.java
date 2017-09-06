@@ -1,6 +1,6 @@
 package com.github.spock55000.kituebung.Altklausur_WS1213;
 
-public class Stack {
+public class Stack {/*
     public ListElementDL begin;
     public ListElementDL end;
     public int size;
@@ -22,7 +22,7 @@ public class Stack {
 
 
     public boolean isEmpty (){
-        return size == 0;
+        return this.size() == 0;
     }
 
     public Object top() { //Inhalt des Oberste Elements bzw das Oberste Element
@@ -39,7 +39,7 @@ public class Stack {
         return null;
 
 
-    }
+    }*/
 }
 
 
