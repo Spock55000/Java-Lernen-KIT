@@ -27,7 +27,7 @@ public class Aufgabe_04 {
         } else {
             System.out.println(!(a&&b));
         }
-        System.out.println((!a && !b || (!a && b) || (a && b)));
+        System.out.println((!a && !b) || (!a && b) || (a && b));
 
         if(a||b||c||d){ // immer wahr
             a = !b; //true

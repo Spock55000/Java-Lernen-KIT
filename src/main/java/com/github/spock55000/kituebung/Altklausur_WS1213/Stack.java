@@ -1,5 +1,7 @@
 package com.github.spock55000.kituebung.Altklausur_WS1213;
 
+import java.util.EmptyStackException;
+
 public class Stack {/*
     public ListElementDL begin;
     public ListElementDL end;
@@ -21,24 +23,34 @@ public class Stack {/*
         return this.size() == 0;
     }
 
-    public Object top() { //Inhalt des Oberste Elements bzw das Oberste Element
-        return null;
-
-
+    public Object top() {
+        if(isEmpty()){
+            throw new EmptyStackException("top on empty Stack");
+        }
+        return end.getData();
     }
 
-    public void push(Object kagge) { //Legt eine Element oben auf den Stapel drauf
-
+    public void push(Object kagge) {
+        if(isEmpty()){
+            end = new ListElementDL(data);
+            end.setPrev(begin);
+        } else {
+            ListElementDL temp = new ListElementDL(data);
+            temp.setPrev(end);
+        }
+        size++;
     }
 
-    public Object pop() { //gibt das oberste Element zurück und löscht es vom Stapel
-        return null;
-
-
+    public Object pop() {
+        if(isEmpty()){
+            throw new EmptyStackException("pop on empty Stack");
+        }
+        Object temp = this.top();
+        end = end.getPrev();
+        size--;
+        return temp;
     }*/
 }
-
-
 
 
 
