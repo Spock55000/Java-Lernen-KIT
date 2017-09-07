@@ -1,11 +1,11 @@
-package com.github.spock55000.kituebung.Altklausur_WS1213;
+package com.github.spock55000.kituebung.Altklausur_SS2017;
 
-public class Aufgabe_10 {
+public class MonsterArenas {
     private static PocketMonster monster1, monster2;
     public static void main(String[] args){
         monster1 = new PsychoMon("Mew");
         monster2 = new ElectricRat("Raichu");
-        System.out.println("Fight: " + monster1.name + " VS. " + monster2.name);
+        System.out.println(monster1.name + " attacks " + monster2.name);
         monster1.attack(monster2);
         monster2.attack(monster1);
     }
@@ -13,7 +13,7 @@ public class Aufgabe_10 {
 class PocketMonster {
     public  int level;
     private int hp;
-    String name = "Unknown";
+    String name = "Raichu";
 
     protected  PocketMonster(String name){
         this.name = name;
@@ -22,7 +22,7 @@ class PocketMonster {
     public  PocketMonster(){}
 
     void attack(PocketMonster a){
-        System.out.println("Attacking: " + a.name);
+        System.out.println(a.name + " attacks Mew");
     }
 }
 class PsychoMon extends PocketMonster{
