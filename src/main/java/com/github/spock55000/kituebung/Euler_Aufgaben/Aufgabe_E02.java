@@ -1,10 +1,6 @@
 package com.github.spock55000.kituebung.Euler_Aufgaben;
 
-
-
 public class Aufgabe_E02 {
-
-
     public void run(){
         long i = 0;
         long j = 1;
@@ -19,9 +15,6 @@ public class Aufgabe_E02 {
             j=summe;
             }
             System.out.println(summe2);
-
-
         }
-
     }
 

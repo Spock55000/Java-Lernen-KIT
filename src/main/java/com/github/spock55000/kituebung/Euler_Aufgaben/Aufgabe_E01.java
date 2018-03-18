@@ -12,13 +12,7 @@ public class Aufgabe_E01 {
           if ((d==0 || f==0)){
               summe+=i;
           }
-
         }
-
         System.out.println(summe);
-
-
     }
-
-
 }

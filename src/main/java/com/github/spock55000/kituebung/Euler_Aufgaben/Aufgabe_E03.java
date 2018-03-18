@@ -8,14 +8,9 @@ public class Aufgabe_E03 {
         for (long j = 2; j <= p; j++) {
             if ((p % j) == 0) {
                 System.out.println(j);
-
                 p /= j;
-
-
             }
         }
     }
-
-
 }
 
