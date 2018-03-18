@@ -39,7 +39,7 @@ public class Aufgabe_04 {
             b = !c;
             c = !c;
             d = !d;
-            System.out.println("Values changed " + a);
+            System.out.println("Values changed: " + a);
             System.out.println(" - ");
         }
 

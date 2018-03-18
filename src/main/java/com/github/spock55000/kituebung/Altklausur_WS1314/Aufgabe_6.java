@@ -4,7 +4,7 @@ public class Aufgabe_6 {
     public static int[] searchField = {1, 2, 3, 4, 6, 7, 8, 9, 10, 35 , 62};
     public static void main(String[] args){
         printArray(searchField);
-        int sN = 62;
+        int sN = 9;
         int index = binarySearch(0, searchField.length-1, sN);
 
         if(index == -1){

@@ -1,8 +1,8 @@
 package com.github.spock55000.kituebung.Altklausur_WS1213;
 
 public class MergeSort {
-    static int[] tbs = {3, 7, 5, 6, 1, 0, 2, 4};
-    static int[] t = new int[8];
+    static int[] tbs = {3, 7, 5, 6, 1, 0, 2, 4, 54, 78, 42, 1, 9, 10, 31, 99};
+    static int[] t = new int[17];
     public static void main(String[] args) {
         mergeSort(0, tbs.length - 1);
     }
@@ -31,6 +31,7 @@ public class MergeSort {
                 j = j+1;
             }
         }
+
     }
     public static void copyToTemp(int lo, int hi){
         for (int k = lo; k <= hi; k++){
