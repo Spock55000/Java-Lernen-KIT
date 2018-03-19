@@ -2,7 +2,7 @@ package com.github.spock55000.kituebung.Altklausur_WS1314;
 
 public class StarShipSimulation {
     private static StarShip[] ncc_1701;
-    public  static int a = 0;
+    public static int a = 0;
     static int d = 3;
 
     public static void main(String[] args){
